@@ -18,4 +18,4 @@ The end-of-word edge only exists if the last word IS an English word, making sur
 A vertex whose last word is a real English word, and which covers all the required letters, is considered a solution.
 
 Note:
-1. The word frequency file also contains "words" that are popular in the internet, but are not considered real words, like "talkin" (slang for "talking").
+1. The word frequency file also contains "words" that are popular in the internet, but are not considered real words, like "talkin" (slang for "talking"). This results in some solutions that contain words that the original game will not accept.
