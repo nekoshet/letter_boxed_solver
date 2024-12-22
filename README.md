@@ -15,4 +15,4 @@ The puzzle is treated as a Graph Traversal problem, where each vertex is a serie
 In addition, there is a unique edge that symbolizes end of word.
 The letter addition edge only exists if the letter transition is legal in the game, and the last word is still a prefix of some English word (to prune impossible solutions early on).
 The end-of-word edge only exists if the last word IS an English word, making sure each word in the solution is a real word.
-A vertex whose last word is a real Enlish word, and which covers all the required letter, is considered a solution.
+A vertex whose last word is a real English word, and which covers all the required letter, is considered a solution.
