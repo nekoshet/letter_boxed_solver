@@ -1,5 +1,6 @@
 # tal.levy
 # 16.12.2024
+import itertools
 import random
 import pickle
 import argparse
@@ -80,18 +81,19 @@ def parse_letter_boxed_spec(spec_path):
     return spec
 
 
-def print_letter_boxed_solutions(spec, randomize=False):
-    for i, sol in solve_letter_boxed(spec, randomize):
+def print_letter_boxed_solutions(spec, nof_solutions, randomize=False):
+    for i, sol in itertools.islice(solve_letter_boxed(spec, randomize), nof_solutions):
         print(sol)
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--spec_path', type=str, required=True)
-    parser.add_argument('--randomize', action='store_true')
+    parser.add_argument('--spec_path', type=str, required=True, help='path to spec file, e.g., specs/spec0.txt')
+    parser.add_argument('--n', type=int, default=1, help='number of solutions to find')
+    parser.add_argument('--randomize', action='store_true', help='randomize order of solutions')
     args = parser.parse_args()
     spec = parse_letter_boxed_spec(args.spec_path)
-    print_letter_boxed_solutions(spec, randomize=args.randomize)
+    print_letter_boxed_solutions(spec, args.n, randomize=args.randomize)
 
 
 if __name__ == '__main__':
