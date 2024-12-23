@@ -33,5 +33,7 @@ The weights of the edges are 1, 0, 0, 1, respectively, so the weight of a path t
 
 A vertex whose last word is empty (last word has ended), and which covers all 12 letters, is considered a solution.
 
+![letter_boxed_graphio drawio (1)](https://github.com/user-attachments/assets/e509ea8f-a76b-40df-88ee-6d19c952d19c)
+
 ### Note:
 The word frequency file also contains "words" that are popular in the internet, but are not considered real words, like "talkin" (slang for "talking"). This results in some solutions that contain words that the original game will not accept.
