@@ -2,9 +2,6 @@ A Python program that solves the Letter Boxed puzzle game (of the New York Times
 
 Link to the New York Times online game: https://www.nytimes.com/puzzles/letter-boxed
 
-![Letter Boxed Image](https://en.wikipedia.org/wiki/Letter_Boxed#/media/File:NY_Times_Letter_Boxed.png)
-
-
 ### How to use:
 1. Install the requirements (pip install -r requirements.txt)
 2. Run create_prefix_set.py, which will download a text file containing 333,000 English words, and save them in serialized data structure as prefix_set.pkl.
@@ -14,15 +11,16 @@ Link to the New York Times online game: https://www.nytimes.com/puzzles/letter-b
    In the --n argument, you can determine the number of solutions to be found (default 1).
    Add --randomize to get different solutions in each run.
 
-### Rules of Letter Boxed:
+### Letter Boxed:
 Each puzzle contains 4 groups of 3 letters each.
 The goal of the game is to find a list of words that has the following properties:
 1. Each word is a real English word
 2. Each word begins with the last letter of the previous word (first word can begin with any letter)
 3. Subsequent letters must be from different letter groups
 4. All 12 letters appear at least once
-
 The shorter the list, the better the solution.
+   
+![Letter Boxed Image](https://upload.wikimedia.org/wikipedia/en/3/3e/NY_Times_Letter_Boxed.png)
 
 ### How it works:
 The puzzle is treated as a Graph Traversal problem, where each vertex is a a list of words, and the edges are of 4 types:
