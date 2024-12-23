@@ -2,6 +2,9 @@ A Python program that solves the Letter Boxed puzzle game (of the New York Times
 
 Link to the New York Times online game: https://www.nytimes.com/puzzles/letter-boxed
 
+![Letter Boxed Image](https://en.wikipedia.org/wiki/Letter_Boxed#/media/File:NY_Times_Letter_Boxed.png)
+
+
 ### How to use:
 1. Install the requirements (pip install -r requirements.txt)
 2. Run create_prefix_set.py, which will download a text file containing 333,000 English words, and save them in serialized data structure as prefix_set.pkl.
