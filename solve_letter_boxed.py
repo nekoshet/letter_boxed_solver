@@ -83,7 +83,7 @@ def parse_letter_boxed_spec(spec_path):
 
 def print_letter_boxed_solutions(spec, nof_solutions, randomize=False):
     for i, sol in itertools.islice(solve_letter_boxed(spec, randomize), nof_solutions):
-        print(sol)
+        print(f'{i}, {sol}')
 
 
 def main():
